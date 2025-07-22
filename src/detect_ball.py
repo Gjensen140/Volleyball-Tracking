@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import os
 
-def detect_volleyball(model_path="models/yolov8_ball.pt", input_path="data/volleyball/images/val", output_dir="runs/detect"):
+def detect_volleyball(model_path="models/yolov8_ball.pt", input_path="data/train/images", output_dir="runs/detect"):
     model = YOLO(model_path)
 
     results = model.predict(
